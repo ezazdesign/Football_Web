@@ -130,18 +130,43 @@ body{
     align-items: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .foot-text{
     font-size: 18px;
 }
+
+
+/*-----------------------
+        Media Query 
+------------------------*/
+
+/* Mobile Device */
+
+
+@media only screen and (max-width:688px){
+
+    .flexible, .half-width, .players-blogs, .blogs{
+        width: 100%;
+    }
+
+    .blog{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+}
+
+/* --------
+Tablet Divec 
+----------- */
+
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .flexible, .half-width, .players-blogs, .blogs{
+        width: 100%;
+    }
+
+    .blog{
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+    }
+}
+
+/* :end */
